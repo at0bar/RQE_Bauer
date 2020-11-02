@@ -14,6 +14,12 @@ namespace xUnitTest_RQE_Test_wi19b066
             get { return result; }
         }
 
+        public calculator()
+        {
+            result = 0;
+        }
+
+
         public void sine(double n)
         {
             result = Math.Sin(n);

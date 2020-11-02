@@ -8,12 +8,13 @@ namespace xUnitTest_RQE_Test_wi19b066
     public class CalSteps
     {
 
-        calculator calc = new calculator();
+        calculator calc;
 
 
         [Given(@"the number is (.*)")]
         public void GivenTheNumberIs(int p0)
         {
+            calc = new calculator();
             calc.sine(p0);
         }
         
